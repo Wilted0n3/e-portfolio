@@ -23,6 +23,10 @@ li {
   list-style: none;
 }
 
+.flex-1 {
+  flex: 1;
+}
+
 /* NAVIGATION BAR */
 
 nav {
@@ -70,4 +74,16 @@ nav {
   font-weight: bold;
   color: #007bff;
   margin: 0 12px;
+}
+
+/* ABOUT ME SECTION */
+
+#about-me {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
 }

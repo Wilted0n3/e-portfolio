@@ -145,3 +145,17 @@ nav {
   font-size: 18px;
   margin-bottom: 28px;
 }
+
+.about-me__link {
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  padding: 0 12px;
+  transition: color 0.3s ease;
+}
+
+.about-me__link:hover {
+  color: #007bff;
+}
+
+

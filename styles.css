@@ -163,39 +163,40 @@ nav {
   color: #007bff;
 }
 
-.about-me__image--container {
+.about-me__image-container figure{
   position: relative;
-  flex: 1;
-  display: flex;
+  /* flex: 1; */
+  /* display: flex; */
   align-items: center;
   transform:scale(0.8)
 }
 
-.about-me__image--default {
+.about-me__image-container img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.about-me__image--hover {
+  height: auto;
+  /* object-fit: cover; */
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.about-me__image-hover {
+  /* position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 100%; */
+  /* object-fit: cover; */
   display: none;
 }
 
-.about-me__image--container:hover .about-me__image--default {
+.about-me__image-container:hover .about-me__image-default {
   display: none;
-  transition: transform 0.3s ease;
-
+  /* transition: transform 0.3s ease; */
 }
 
-.about-me__image--container:hover .about-me__image-hover {
+.about-me__image-container:hover .about-me__image-hover{
   display: block;
-  transition: transform 0.3s ease;
+  /* transition: transform 0.3s ease; */
 }
 

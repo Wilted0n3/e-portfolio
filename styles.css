@@ -151,6 +151,7 @@ nav {
   margin-bottom: 28px;
 }
 
+/* icons under paragraph */
 .about-me__link {
   font-size: 18px;
   color: black;
@@ -165,6 +166,9 @@ nav {
 
 .about-me__image-container {
   margin-top: 32px;
+  /* flex: 1; */
+  /* display: flex; */
+  align-items: center;
 }
 
 .about-me__image-container figure{
@@ -221,4 +225,4 @@ nav {
 }
  */
 
- 
+

@@ -109,6 +109,11 @@ nav {
   text-align: center;
 }
 
+.about-me__info {
+  display: flex;
+  flex-direction: column;
+}
+
 .about-me__info--container {
   display: flex;
   flex-direction: column;
@@ -158,4 +163,39 @@ nav {
   color: #007bff;
 }
 
+.about-me__image--container {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  transform:scale(0.8)
+}
+
+.about-me__image--default {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-me__image--hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.about-me__image--container:hover .about-me__image--default {
+  display: none;
+  transition: transform 0.3s ease;
+
+}
+
+.about-me__image--container:hover .about-me__image-hover {
+  display: block;
+  transition: transform 0.3s ease;
+}
 

@@ -33,6 +33,15 @@ li {
 
 .flex {
   display: flex;
+  flex-direction: column;
+}
+
+.container {
+  /* width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; */
+  /* leave the above in. he may change it */
+  padding: 20px 0;
 }
 
 .row {
@@ -45,6 +54,14 @@ li {
 
 .text--purple {
   color: #007bff;
+}
+
+section:nth-child(even) {
+  background-color: #c6c6c6;
+}
+
+.section__title {
+  margin-bottom: 20px;
 }
 
 /* NAVIGATION BAR */

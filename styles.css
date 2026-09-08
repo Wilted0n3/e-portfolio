@@ -244,13 +244,29 @@ nav {
 
 /* TECH STACK */
 
+.language__img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+.language:hover .language__img {
+  filter: brightness(80%);
+  opacity: 0.85;
+  transform: scale(0.9);
+  transition: transform 0.3s;
+}
+
 .language {
+  position: relative;
   width: 25%;
   /* max-width: 100px; */
-  /* display: flex;
-  flex-direction: column;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
   align-items: center;
-  margin: 20px; */
+  /* margin: 20px; */
 }
 
 .language__img--wrapper {
@@ -269,4 +285,22 @@ nav {
   /* justify-content: center; */
   /* align-items: center; */
   /* margin-top: 20px; */
+}
+
+.language__name {
+  position:absolute;
+  text-align: center;
+  bottom: 0;
+  margin-top: 8px;
+  /* font-weight: bold; */
+  color: #333;
+  font-size: 20px;
+  transform: scale(0);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.language:hover .language__name {
+  transform: scale(1);
+  opacity: 1;
 }

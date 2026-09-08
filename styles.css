@@ -41,7 +41,7 @@ li {
   max-width: 1200px;
   margin: 0 auto; */
   /* leave the above in. he may change it */
-  padding: 20px 0;
+  padding: 50px 0;
 }
 
 .row {
@@ -121,7 +121,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 60px 20px;
+  padding: 0 20px;
   background-color: #f8f9fa;
   text-align: center;
 }
@@ -242,4 +242,31 @@ nav {
 }
  */
 
+/* TECH STACK */
 
+.language {
+  width: 25%;
+  /* max-width: 100px; */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px; */
+}
+
+.language__img--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 16px;
+  /* height: auto; */
+  /* margin-bottom: 8px; */
+}
+
+.language__list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* margin-top: 20px; */
+}

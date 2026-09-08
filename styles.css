@@ -46,7 +46,7 @@ li {
 
 .row {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
@@ -57,7 +57,7 @@ li {
 }
 
 section:nth-child(even) {
-  background-color: #c6c6c6;
+  background-color: #dfe0e5;
 }
 
 .section__title {

@@ -307,6 +307,17 @@ nav {
 
 /* PROJECTS */
 
+.project {
+  /* position: relative; */
+  margin-bottom: 140px;
+  /* overflow: hidden; */
+  /* border-radius: 20px; */
+}
+
+.project:last-child {
+  margin-bottom: 40px;
+}
+
 .project__img {
   width: 100%;
   /* height: auto; */

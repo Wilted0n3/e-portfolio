@@ -387,7 +387,7 @@ nav {
 .project__description {
   position: absolute;
   top: 50%;
-  left: 90px;
+  left: 60px;
   transform: translateY(100%);
   max-width: 550px;
   color: #fff;
@@ -485,4 +485,28 @@ footer {
   /* transition: transform 0.3s ease; */
   color: #0056b3;
   opacity: 1;
+}
+
+/* small phones, tablets, large smart phones */
+
+@media (max-width: 768px) {
+  nav {
+    height: 68px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  .about-me__info--para {
+    font-size: 18px;
+  }
+  .language {
+    width: calc(100% / 2);
+  }
+  .project__description--para {
+    font-size: 14px;
+  }
+  .project__description {
+    left: 30px;
+    padding-right: 30px;
+  }
 }

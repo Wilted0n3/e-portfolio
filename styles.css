@@ -23,6 +23,11 @@ p {
   font-size: 16px;
 }
 
+a {
+  text-decoration: none;
+  /* color: inherit; */
+}
+
 li {
   list-style: none;
 }
@@ -84,7 +89,6 @@ nav {
 
 .nav__link--anchor {
   margin: 0 10px;
-  text-decoration: none;
   color: #333;
   font-weight: 700;
   transition: color 0.3s ease;
@@ -172,7 +176,6 @@ nav {
 .about-me__link {
   font-size: 18px;
   color: black;
-  text-decoration: none;
   padding: 0 12px;
   transition: color 0.3s ease;
 }
@@ -383,13 +386,12 @@ nav {
 }
 
 .project__description--para {
-  font-size: 18px;
+  font-size: 14px;
   margin: 16px 0;
 }
 
 .project__description--link {
   font-size: 20px;
-  text-decoration: none;
   /* transition: background-color 0.3s ease; */
 }
 
@@ -402,3 +404,53 @@ nav {
   margin-bottom: 10px;
 }
 
+/* FOOTER */
+
+footer {
+  background-color: #242424;
+  /* padding: 20px 0; */
+  /* text-align: center; */
+}
+
+.footer__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8% 0;
+}
+
+.footer__logo--img {
+  width: 100px;
+  height: auto;
+}
+
+.footer__logo--popper {
+  position:absolute
+  right: 0;
+  top: 30px;
+  /* font-size: 24px; */
+  /* font-weight: bold; */
+  /* margin-bottom: 10px; */
+}
+
+.footer__social--list {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 18px;
+}
+
+.footer__social--link, 
+.footer__copyright, 
+.footer__logo--popper{
+  color: #fff;
+  /* margin: 0 10px; */
+  /* font-size: 16px; */
+}
+
+.footer__anchor {
+  position: relative;
+  margin-bottom: 10px;
+}

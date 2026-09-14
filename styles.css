@@ -207,15 +207,18 @@ nav {
 }
 
 .about-me__image-container {
-  margin-top: 32px;
-  /* flex: 1; */
-  /* display: flex; */
+  /* margin-top: 32px; */
+  flex: 1;
+  max-width: 1200px;
+  margin: 42px auto 0;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 .about-me__image-container figure{
   position: relative; /* Ensures the images stack on top of each other */
-  /* flex: 1; */
+  flex: 1;
   /* display: flex; */
   align-items: center;
   transform:scale(0.8)
@@ -306,7 +309,9 @@ nav {
 .language__list {
   display: flex;
   width: 100%;
+  max-width: 1200px;
   flex-wrap: wrap;
+  margin: 0 auto;  
   /* justify-content: center; */
   /* align-items: center; */
   /* margin-top: 20px; */
@@ -508,5 +513,39 @@ footer {
   .project__description {
     left: 30px;
     padding-right: 30px;
+  }
+}
+
+/* small phones */
+
+@media (max-width: 480px) {
+  .nav__link:not(:last-child) {
+    display: none;
+  }
+
+  .project__description {
+    margin: 0 auto;
+    /* left: 0;
+    padding-right: 0; */
+  }
+
+  .project__description--para {
+    display: none;
+  }
+
+  .project__description--links {
+    display: flex;
+    justify-content: center;
+  }
+
+  .project__description--title {
+    font-size: 32px;
+    line-height: 1;
+    text-align: center;
+  }
+
+    .project__description--sub-title {
+    text-align: center;
+    margin: 12px 0 14px;
   }
 }

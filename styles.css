@@ -30,7 +30,12 @@ p {
 a {
   position: relative;
   text-decoration: none;
+  transition: opacity 300ms ease;
   /* color: inherit; */
+}
+
+a:hover {
+  opacity: .7;
 }
 
 .link__hover-effect:after {
@@ -41,7 +46,7 @@ a {
   width: 0;
   height: 3px;
   bottom: -3px;
-  transition: all .3s ease;
+  transition: all .5s ease;
 }
 
 .link__hover-effect:hover:after {
@@ -200,7 +205,24 @@ nav {
 
 .about-me__info--title {
   margin-bottom: 28px;
-  animation: about-me-fade-up 650ms 400ms backwards;
+  animation: about-me-fade-up 400ms 400ms backwards;
+}
+
+.handshake {
+  display: inline-block;
+  animation: animate-hand-shake 600ms 1200ms infinite ease-in-out;
+}
+
+@keyframes animate-hand-shake {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
 
 .about-me__info--para {

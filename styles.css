@@ -258,7 +258,7 @@ nav {
 }
 
 .about-me__image-container:hover .about-me__image-default {
-  opacity: 0;
+  opacity: 1;
 }
 
 /* the following styles worked, but I couldn't get them to fade-it was abrupt */
